@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<title data-l10n-id="title">Logo Interpreter</title>
+<meta charset="utf-8" />
+
+<meta
+  name="viewport"
+  content="initial-scale=1, maximum-scale=1, user-scalable=0, width=device-width"
+/>
+
+<link rel="alternate" type="application/atom+xml" />
+<link rel="shortcut icon" href="logo.png" />
+<link rel="stylesheet" href="index.css" />
+
+<body class="single">
+  <div id="display-panel" class="panel">
+    <div id="display">
+      <div class="inner">
+        <canvas id="sandbox" width="450" height="250">
+          <span data-l10n-id="no-canvas"
+            >Your browser does not support the canvas element - sorry!</span
+          >
+        </canvas>
+        <canvas id="turtle" width="450" height="250"></canvas>
+        <div id="overlay"></div>
+        <div id="error"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="input-panel" class="panel">
+    <div id="run">
+      <div data-l10n-id="ip-button-run" class="label">Run</div>
+    </div>
+    <div id="stop">
+      <div data-l10n-id="ip-button-stop" class="label">Stop</div>
+    </div>
+    <div id="clear">
+      <div data-l10n-id="ip-button-clear" class="label">Clear</div>
+    </div>
+    <div id="input">
+      <div class="inner">
+        <div id="toggle">
+          <span id="expand-label">&#x2197;</span>
+          <span id="collapse-label">&#x2199;</span>
+        </div>
+        <textarea
+          rows="1"
+          cols="80"
+          placeholder="Type your code here..."
+          data-l10n-id="logo-ta-single-line"
+          id="logo-ta-single-line"
+        ></textarea>
+        <textarea
+          rows="20"
+          cols="80"
+          placeholder="Type your code here..."
+          data-l10n-id="logo-ta-multi-line"
+          id="logo-ta-multi-line"
+        ></textarea>
+      </div>
+    </div>
+  </div> -->
+
+  <script src="logo.js"></script>
+  <script src="turtle.js"></script>
+  <script src="index.js"></script>
+</body>
